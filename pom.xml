@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo-heroku</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>demo-heroku</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -42,11 +42,11 @@
 				<version>3.11.0</version> <!-- Update to a version that supports release flag -->
 				<configuration>
 					<!-- <source>21</source>
-					<target>8</target>
-					<release>8</release> -->
+					<target>8</target> -->
+					<release>21</release>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
                 <version>3.0.7</version>
@@ -62,7 +62,7 @@
                             ${project.build.directory}/${project.build.finalName}.jar</web>
                     </processTypes>
                 </configuration>
-            </plugin>
+            </plugin> -->
 		</plugins>
 	</build>
 
